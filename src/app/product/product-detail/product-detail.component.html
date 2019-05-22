@@ -1,0 +1,52 @@
+
+  <section class="main-content">				
+    <div class="row">						
+      <div class="span5">
+        <div class="row">
+          <div class="span3">
+            <a><img alt="" src="../../../assets/images/{{secproduct.image}}" height="250" width="250"></a>												
+          </div>
+          <div class="span2">
+            <address>
+              <strong>Brand:</strong> <span>{{sec}}</span><br>
+              <strong>Product Code:</strong> <span>{{item.description}}</span><br>
+              <strong>Size:</strong> <span>{{secproduct.size}}</span><br>
+              <strong>Unit:</strong> <span>{{secproduct.unit}}</span><br>								
+            </address>									
+            <h4  >Price: ${{secproduct.unitPrice}}</h4>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="span9">
+           
+            <tabset>
+              <tab heading="Basic Info" id="tab1"
+                >Product Basic Info
+                <form class="form-group">
+                  <h4 class="form-control">{{ secproduct.brand }}</h4>
+                  <h4 class="form-control">{{ secproduct.productName }}</h4>
+                  <h4 class="form-control">{{ secproduct.size }}</h4>
+                  <h4 class="form-control">{{ secproduct.unit }}</h4>
+                </form>
+              </tab>
+              <tab heading="Detail Info"
+                >Detail Content
+               <form class="form-group">
+                  <a><img alt="" src="../../../assets/images/{{secproduct.image}}" height="250" width="250"></a>
+          <h4 class="form-control">{{ secproduct.brand }}</h4>
+          <h4 class="form-control">{{ secproduct.productName }}</h4>
+          <h4 class="form-control">{{ secproduct.size }}</h4>
+          <h4 class="form-control">{{ secproduct.unit }}</h4>
+          </form>
+              </tab>
+              <tab heading="Gallery"
+              >Gallery
+              <div class="span3">
+              								
+              </div>
+            </tab>
+            </tabset>
+               
+          </div>						
+         

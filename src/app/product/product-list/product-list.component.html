@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row">
+	  <div class="col-md-7">
+		<ul class="thumbnails listing-products">
+			<li *ngFor="let item of proList" [routerLink]="['/proDetail/', item.id]" routerLinkActive="router-link-active"  class="span2">
+				<div class="product-box" (click)="productDetay(item.id)">
+					<span  class="sale_tag"></span>												
+					<a ><img   alt="" src="../../../assets/images/{{item.image}}" ></a><br/>
+					<a    class="title">{{item.productName}}</a><br/>
+					<a  class="category">{{item.description}}</a>
+					<p class="price">${{item.unitPrice}}</p>
+				</div>
+			</li>       
+		</ul>								
+	  </div>
+	  <div class="col-md-5">
+
+		  
+		</div>
+  
+	</div>
+  
+  </div>
